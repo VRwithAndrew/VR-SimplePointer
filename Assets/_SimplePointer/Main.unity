@@ -517,7 +517,7 @@ GameObject:
   - component: {fileID: 649165543}
   - component: {fileID: 649165542}
   m_Layer: 0
-  m_Name: GameObject (2)
+  m_Name: Chat3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -535,12 +535,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8049249f0caed0b4ab938850f7a5da40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Question: "quest\xE3o 3"
+  Question: "Qual o pr\xF3ximo passo do procedimento?"
   Answers:
-  - a
-  - a
-  - a
-  - a
+  - Organizar o material na bandeja
+  - Identificar o paciente
+  - "Avaliar as condi\xE7\xF5es da rede venosa"
+  - "Posicionar o bra\xE7o"
   CorrectAnswer: 2
 --- !u!4 &649165543
 Transform:
@@ -1235,7 +1235,7 @@ GameObject:
   - component: {fileID: 1446778796}
   - component: {fileID: 1446778795}
   m_Layer: 0
-  m_Name: GameObject (1)
+  m_Name: Chat2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1253,12 +1253,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8049249f0caed0b4ab938850f7a5da40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Question: "quest\xE3o 2"
+  Question: "Qual o pr\xF3ximo passo do procedimento?"
   Answers:
-  - a
-  - a
-  - a
-  - a
+  - Explicar o procedimento ao paciente
+  - Apresentar-se ao paciente
+  - "Certificar-se que o paciente cumpriu as recomenda\xE7\xF5es"
+  - Identificar o paciente
   CorrectAnswer: 2
 --- !u!4 &1446778796
 Transform:
@@ -1509,7 +1509,7 @@ GameObject:
   - component: {fileID: 1508266057}
   - component: {fileID: 1508266056}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Chat1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1527,12 +1527,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8049249f0caed0b4ab938850f7a5da40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Question: "quest\xE3o 1"
+  Question: Ao entrar na sala com o paciente, qual a primeira coisa a ser feita?
   Answers:
-  - a
-  - a
-  - a
-  - a
+  - "Higienizar as m\xE3os"
+  - "Ler o pedido m\xE9dico"
+  - Explicar o procedimento
+  - Organizar o material na bandeja
   CorrectAnswer: 2
 --- !u!4 &1508266057
 Transform:
@@ -1620,7 +1620,7 @@ GameObject:
   - component: {fileID: 1883077410}
   - component: {fileID: 1883077411}
   m_Layer: 5
-  m_Name: Button (2)
+  m_Name: Alternativa2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1816,7 +1816,7 @@ GameObject:
   - component: {fileID: 1932459365}
   - component: {fileID: 1932459366}
   m_Layer: 5
-  m_Name: Button (3)
+  m_Name: Alternativa3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2121,7 +2121,7 @@ GameObject:
   - component: {fileID: 1985045675}
   - component: {fileID: 1985045676}
   m_Layer: 5
-  m_Name: Button (4)
+  m_Name: Alternativa4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2305,7 +2305,7 @@ GameObject:
   - component: {fileID: 2025778105}
   - component: {fileID: 2025778106}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: Alternativa1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
