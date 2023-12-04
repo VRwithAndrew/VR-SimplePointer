@@ -4,7 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Quiz : MonoBehaviour
+public class QuizManager : MonoBehaviour
 {
     public List<QuestionAndAnswers> QnA;
     public GameObject[] options;
