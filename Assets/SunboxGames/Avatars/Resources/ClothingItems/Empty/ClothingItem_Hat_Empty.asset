@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d05bef2bae6e104fba9e9558236329c, type: 3}
+  m_Name: ClothingItem_Hat_Empty
+  m_EditorClassIdentifier: 
+  Name: No Hat
+  IsEmpty: 1
+  SlotType: 1
+  MaleMesh: {fileID: 4674788483118629325, guid: 51c76f4b7b290e042b8faf8a67aecef9, type: 3}
+  FemaleMesh: {fileID: 4674788483118629325, guid: 51c76f4b7b290e042b8faf8a67aecef9, type: 3}
+  Variations:
+  - {fileID: 2100000, guid: ce2765317b52313419d847a2fd1a61f1, type: 2}
+  SecondaryMaterial: {fileID: 0}
+  HideShapeWeightIndex: -1
+  HideShapeWeightIndexSecondary: -1
+  HideSlots: 

@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d05bef2bae6e104fba9e9558236329c, type: 3}
+  m_Name: ClothingItem_Pants_Cargo_Shorts
+  m_EditorClassIdentifier: 
+  Name: Cargo Shorts
+  IsEmpty: 0
+  SlotType: 5
+  MaleMesh: {fileID: -6704499701584301046, guid: e66f9b589b868ac4bac03132a3b60a69, type: 3}
+  FemaleMesh: {fileID: 3679616557252071857, guid: 99d76570a4f3df149b9ff487f3c1b967, type: 3}
+  Variations:
+  - {fileID: 2100000, guid: 00b30fe20e6ff7d468f5a9cc38a0d022, type: 2}
+  - {fileID: 2100000, guid: c535b9473a595bf4d84705eaec28d45b, type: 2}
+  SecondaryMaterial: {fileID: 0}
+  HideShapeWeightIndex: 39
+  HideShapeWeightIndexSecondary: -1
+  HideSlots: 

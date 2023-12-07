@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d05bef2bae6e104fba9e9558236329c, type: 3}
+  m_Name: ClothingItem_Pants_Tracksuit
+  m_EditorClassIdentifier: 
+  Name: Tracksuit Pants
+  IsEmpty: 0
+  SlotType: 5
+  MaleMesh: {fileID: 5109900317009765695, guid: ca0a29ca4c0a7704d97304fef291f7ad, type: 3}
+  FemaleMesh: {fileID: -6620935718095516362, guid: ef63c8cebd247e94591cbf94a207046c, type: 3}
+  Variations:
+  - {fileID: 2100000, guid: 9e262df93c428fe4c89332beb065e528, type: 2}
+  - {fileID: 2100000, guid: 9e0f0eb025c02e04b9bb63cfd50a8e2f, type: 2}
+  - {fileID: 2100000, guid: 0b493d6d4639a2c4f889f22cdaaced55, type: 2}
+  SecondaryMaterial: {fileID: 0}
+  HideShapeWeightIndex: 24
+  HideShapeWeightIndexSecondary: -1
+  HideSlots: 
