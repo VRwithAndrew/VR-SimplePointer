@@ -6,47 +6,87 @@ using UnityEngine.UI;
 
 public class QuizManager : MonoBehaviour
 {
-    public List<QuestionAndAnswers> QnA;
+    public TMP_Text questionTextDisplay;
+
+    public List<Question> questions;
     public GameObject[] options;
-    public int currentQuestion;
 
-    public TMP_Text QuestionTxt;
+    public int currentQuestion = -1;
+    public double score = 0;
 
-    private void Start()
+    private List<string> expectedAnswers = new List<string>{ "1", "2", "3" };
+    private List<string> userAnswers;
+
+    private GameManagerScript gameManager;
+
+    public void AddAnswer(string id)
     {
-        generateQuestion();
+        userAnswers.Add(id);
+        GenerateQuestion();
     }
 
-    public void Correct()
-    {
-        generateQuestion();
-
-        QnA.RemoveAt(currentQuestion);
-    }
-
-    void SetAnswers()
+    public void PrepareGame()
     {
         for (int i = 0; i < options.Length; i++)
         {
-            options[i].GetComponent<AnswerScript>().isCorrect = false;
-            options[i].transform.GetChild(0).GetComponent<TMP_Text>().text = QnA[currentQuestion].Answers[i];
+            options[i].SetActive(true);
+        }
 
-            if(QnA[currentQuestion].CorrectAnswer == i+1)
-            {
-                options[i].GetComponent<AnswerScript>().isCorrect = true;
-            }
+        currentQuestion = -1;
+        userAnswers = new List<string>();
+        GenerateQuestion();
+    }
+
+    private void Start()
+    {
+        gameManager = GameObject.FindWithTag("GameManager").GetComponent<GameManagerScript>();
+    }
+
+    private void GenerateQuestion()
+    {
+        currentQuestion += 1;
+        if(currentQuestion == questions.Count){
+            CalculateScore();
+            gameManager.EndGame();
+            return;
+        }
+
+        questionTextDisplay.text = questions[currentQuestion].QuestionText;
+        SetAlternatives();
+    }
+
+    private void SetAlternatives()
+    {
+        for (int i = 0; i < options.Length; i++)
+        {
+            options[i].transform.GetChild(0).GetComponent<TMP_Text>().text = questions[currentQuestion].Alternatives[i].Text;
+            options[i].GetComponent<AnswerScript>().id = questions[currentQuestion].Alternatives[i].Id;
         }
     }
 
-    void generateQuestion()
+
+    private void CalculateScore()
     {
-        currentQuestion = Random.Range(0, QnA.Count);
+        int m = expectedAnswers.Count;
+        int n = userAnswers.Count;
 
-        QuestionTxt.text = QnA[currentQuestion].Question;
+        int[,] matrix = new int[m + 1, n + 1];
 
-        SetAnswers();
+        for (int i = 0; i <= m; i++)
+        {
+            for (int j = 0; j <= n; j++)
+            {
+                if (i == 0 || j == 0)
+                    matrix[i, j] = 0;
+                else if (expectedAnswers[i - 1] == userAnswers[j - 1])
+                    matrix[i, j] = matrix[i - 1, j - 1] + 1;
+                else
+                    matrix[i, j] = System.Math.Max(matrix[i - 1, j], matrix[i, j - 1]);
+            }
+        }
 
+        int lcsLength = matrix[m, n];
+        score = ((double)lcsLength / m) * 10;
     }
-
 
 }

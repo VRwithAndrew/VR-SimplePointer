@@ -4,19 +4,11 @@ using UnityEngine;
 
 public class AnswerScript : MonoBehaviour
 {
-    public bool isCorrect = false;
+    public string id = "";
     public QuizManager quizManager;
 
     public void Answer()
     {
-        if(isCorrect)
-        {
-            Debug.Log("Correct");
-            quizManager.Correct();
-        } 
-        else
-        {
-            Debug.Log("Wrong");
-        }
+        quizManager.AddAnswer(id);
     }
 }
