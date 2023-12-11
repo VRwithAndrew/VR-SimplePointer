@@ -34,25 +34,12 @@ public class QuizManager : MonoBehaviour
         userAnswers = new List<string>();
 
         expectedAnswers = new List<string>() { 
-            //"Higienizar as mãos",
-            //"Ler o pedido ou a etiqueta de solicitação do exame",
-            //"Apresentar-se ao paciente",
-            //"Identificar o paciente",
-            //"Explicar o procedimento ao paciente",
-            //"Certificar-se que o paciente cumpriu as recomendações de acordo com o(s) exame(s) a serem colhidos (jejum, repouso, uso de medicamentos, entre outras)"
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13"
+            "Higienizar as mãos",
+            "Ler o pedido ou a etiqueta de solicitação do exame",
+            "Apresentar-se ao paciente",
+            "Identificar o paciente",
+            "Explicar o procedimento ao paciente",
+            "Certificar-se que o paciente cumpriu as recomendações de acordo com o(s) exame(s) a serem colhidos (jejum, repouso, uso de medicamentos, entre outras)"
         };
 
         GenerateQuestion();

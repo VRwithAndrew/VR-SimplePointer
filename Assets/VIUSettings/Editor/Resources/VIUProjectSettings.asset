@@ -20,3 +20,4 @@ MonoBehaviour:
   - ColorSpace
   - ReviewOpenXRProjectValidationIssues
   - EnableAllFeatureSets
+  - InitializeonStartup
