@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4216a75711b477746b360a0a80e12679, type: 3}
+  m_Name: HairItem_05
+  m_EditorClassIdentifier: 
+  Name: Dreadlocks
+  Variations:
+  - {fileID: 2100000, guid: 379df6cff6f311b4da4707134ac4c9fe, type: 2}
+  - {fileID: 2100000, guid: 4999d846ea5669647bddfb96176823eb, type: 2}
+  - {fileID: 2100000, guid: 1be0f3a0858a6104795b838d663f2133, type: 2}
+  - {fileID: 2100000, guid: 3568ea67b46eeba4a9cc76b527d55a5c, type: 2}
+  - {fileID: 2100000, guid: faa3fe17d348c994c9bda8a5d8b316b3, type: 2}
+  - {fileID: 2100000, guid: cb8bfb24baec46949ab4572f2e57835d, type: 2}
+  HairMesh: {fileID: -7511558181221131132, guid: 47878ce0b9d38d244a3c176cc8d66c35, type: 3}
+  HatOffset: {x: 0, y: 0, z: 0}
+  HideHairWhenHatEquipped: 1

@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d05bef2bae6e104fba9e9558236329c, type: 3}
+  m_Name: ClothingItem_Glasses_02_Tinted
+  m_EditorClassIdentifier: 
+  Name: Pilot Glasses Tinted
+  IsEmpty: 0
+  SlotType: 3
+  MaleMesh: {fileID: 6515110658399377313, guid: 6194cbc00d15261469ca80de1650b93a, type: 3}
+  FemaleMesh: {fileID: 6515110658399377313, guid: 6194cbc00d15261469ca80de1650b93a, type: 3}
+  Variations:
+  - {fileID: 2100000, guid: c6648be08a23a134db8b91309f694c68, type: 2}
+  - {fileID: 2100000, guid: 54667b22b1c7eb2479e8d8a4bdd8e2f6, type: 2}
+  - {fileID: 2100000, guid: a2cd807818ea4c3449e77238e5703361, type: 2}
+  SecondaryMaterial: {fileID: 2100000, guid: e9461639544778e4f98952f7ce75e1e1, type: 2}
+  HideShapeWeightIndex: -1
+  HideShapeWeightIndexSecondary: -1
+  HideSlots: 
