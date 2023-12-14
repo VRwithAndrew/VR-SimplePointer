@@ -9,6 +9,9 @@ TagManager:
   - EndGameComponents
   - GameManager
   - QuizManager
+  - RoomLight
+  - SamplesInfoPanel
+  - Avatar
   layers:
   - Default
   - TransparentFX
